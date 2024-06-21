@@ -9,7 +9,16 @@ import java.util.List;
 
 @Repository
 public interface UtenteRepository extends JpaRepository<Utente , Long> {
+/*
     @Query("SELECT u FROM postazione WHERE u.tipo = 'SALA_RIUNIONI'")
     List<Utente> filterBySalaRiunioni();
+
+    @Query("SELECT u FROM postazione WHERE u.tipo = 'PRIVATO'")
+    List<Utente> filterBySalaPrivata();
+
+    @Query("SELECT u FROM postazione WHERE u.tipo = 'OPEN_SPACE'")
+    List<Utente> filterBySalaOpenSpace();
+
+ */
 
 }
