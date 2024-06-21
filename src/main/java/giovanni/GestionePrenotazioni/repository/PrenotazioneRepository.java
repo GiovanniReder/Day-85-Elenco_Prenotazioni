@@ -1,9 +1,9 @@
 package giovanni.GestionePrenotazioni.repository;
 
-import giovanni.GestionePrenotazioni.entitites.Edificio;
+import giovanni.GestionePrenotazioni.entitites.Prenotazione;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface EdificioRepository extends JpaRepository<Edificio , Long> {
+public interface PrenotazioneRepository extends JpaRepository<Prenotazione , Long> {
 }

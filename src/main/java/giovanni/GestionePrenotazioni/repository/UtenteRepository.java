@@ -2,6 +2,8 @@ package giovanni.GestionePrenotazioni.repository;
 
 import giovanni.GestionePrenotazioni.entitites.Utente;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UtenteRepository extends JpaRepository<Utente, Long> {
+@Repository
+public interface UtenteRepository extends JpaRepository<Utente , Long> {
 }
