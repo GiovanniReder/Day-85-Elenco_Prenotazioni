@@ -9,12 +9,16 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class UtenteService {
 
-    private UtenteRepository utenteRepository;
+    private final UtenteRepository utenteRepository;
+
+    public UtenteService(UtenteRepository utenteRepository) {
+        this.utenteRepository = utenteRepository;
+    }
 
     public void saveUtente(Utente utente) {
 
         utenteRepository.save(utente);
-        System.out.println();
+        System.out.println("utente " + utente + " salvato ");
     }
-     
+
 }
