@@ -1,5 +1,6 @@
 package giovanni.GestionePrenotazioni;
 
+import giovanni.GestionePrenotazioni.entitites.Utente;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
