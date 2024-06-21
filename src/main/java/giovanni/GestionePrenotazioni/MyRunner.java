@@ -15,6 +15,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Component
 public class MyRunner implements CommandLineRunner {
@@ -41,7 +42,7 @@ private PrenotazioneService prenotazioneService;
         Utente utente4 = new Utente("Lucio" , "lucio dalla" , "lucino@epi.it");
         Utente utente5 = new Utente("Giulio" , " giuliothetop" , "eatgiulio@epi.it");
 
-       utenteService.saveUtente(utente1);
+     //  utenteService.saveUtente(utente1);
      //  utenteService.saveUtente(utente3);
      //  utenteService.saveUtente(utente4);
      //  utenteService.saveUtente(utente5);
@@ -49,16 +50,17 @@ private PrenotazioneService prenotazioneService;
 
 
         Edificio edificio = new Edificio("Palazzo riunioni" , " via epici 22" , "Las Vegas");
-        edificioService.saveEdificio(edificio);
+      //  edificioService.saveEdificio(edificio);
 
 
         Postazione postazione = new Postazione(edificio , 20 , TipoEnum.SALA_RIUNIONI , "piccola sala riunioni situata al 5 piano");
-        postazioenService.savePostazione(postazione);
+      // postazioenService.savePostazione(postazione);
 
-        LocalDate prenotazione1 = LocalDate.now();
+
+        LocalDate prenotazione1 = LocalDate.ofEpochDay(2024-5-12);
         Prenotazione prenotazione = new Prenotazione(prenotazione1, utente1 ,postazione);
 
-        prenotazioneService.savePrenotazione(prenotazione);
+       // prenotazioneService.savePrenotazione(prenotazione);
 
     }
 }
